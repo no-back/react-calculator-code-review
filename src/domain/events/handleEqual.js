@@ -1,6 +1,6 @@
-import { OPERATOR, TYPE } from "../../utils/const";
 import EqualValidate from "../validate/equalValidate";
 import Validate from "../validate/validate";
+import { OPERATOR, TYPE } from "../../utils/const";
 
 const handleEqual = (input, state, dispatch) => {
   const { OPERATION, EQUAL } = TYPE;

@@ -9,7 +9,6 @@ import {
 } from "./domain";
 import { ERROR, TYPE } from "./utils/const";
 import { initialState, reducer } from "./reducer";
-import { useEffect } from "react";
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);

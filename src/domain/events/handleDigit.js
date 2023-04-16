@@ -1,6 +1,6 @@
-import { TYPE } from "../../utils/const";
 import DigitValidate from "../validate/digitValidate";
 import Validate from "../validate/validate";
+import { TYPE } from "../../utils/const";
 
 const handleDigit = (input, state, dispatch) => {
   const { DIGIT, OPERATION, RESET } = TYPE;
@@ -51,7 +51,6 @@ const handleDigit = (input, state, dispatch) => {
     return;
   }
 
-  // 숫자 붙이기
   dispatch({
     type: DIGIT,
     screen: {

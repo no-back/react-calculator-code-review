@@ -1,3 +1,4 @@
+import { Validate } from "./domain";
 import { TYPE } from "./utils/const";
 
 export const initialState = {
@@ -12,7 +13,7 @@ export const reducer = (state, action) => {
 
   switch (action.type) {
     case DIGIT:
-      if (parseInt(state.screen.value, 10) === 0) {
+      if (Validate.isInitZero(state.screen.value, 10)) {
         return {
           screen: {
             value: action.screen.value,
@@ -39,7 +40,7 @@ export const reducer = (state, action) => {
       };
 
     case OPERATION:
-      if (parseInt(state.screen.value, 10) === 0) {
+      if (Validate.isInitZero(state.screen.value, 10)) {
         return {
           screen: {
             value: action.screen.value,
