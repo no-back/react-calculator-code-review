@@ -12,8 +12,8 @@ const setResult= (previousNum, operation, currentNum) => {
         case "/": totalNumber = Math.floor(Number(previousNum) / Number(currentNum));
             break;
         }
+        return totalNumber;
     }
-    return totalNumber;
 }
 
 const setValues = (setPreviousNum, setOperations, setCurrentNum, setTotalCalculation, value) => {
